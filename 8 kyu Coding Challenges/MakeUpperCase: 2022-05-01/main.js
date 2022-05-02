@@ -8,7 +8,7 @@ function makeUpperCase(str) {
 /*
 console.log(makeUpperCase('hello')) --> "HELLO"
 console.log(makeUpperCase('blahblah')) --> "BLAHBLAH"
-console.log(makeUpperCase('trex ')) --> "trex"
+console.log(makeUpperCase('trex ')) --> "TREX"
 */
 
 // Solution
