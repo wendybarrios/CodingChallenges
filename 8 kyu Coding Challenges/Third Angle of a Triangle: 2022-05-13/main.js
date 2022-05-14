@@ -17,3 +17,9 @@ console.log(otherAngle(60, 60)) --> 60
 console.log(otherAngle(43, 78)) --> 59
 
 */
+
+// Solution
+
+function otherAngle(a, b) {
+    return 180 - (a+b);
+  }
