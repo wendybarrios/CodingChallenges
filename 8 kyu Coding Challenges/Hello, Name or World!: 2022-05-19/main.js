@@ -9,6 +9,7 @@ hello()        --> 'Hello, World!'
 hello('')     --> 'Hello, World!'
 */
 
+// Solution
 function hello (name){
     // if else statement
     if(name){
