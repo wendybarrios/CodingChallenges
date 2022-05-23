@@ -9,7 +9,7 @@
 /*
 hoopCount(3)  --> "Keep at it until you get it" 
 hoopCount(11) --> "Great, now move on to tricks"
-*/
+*/ 
 
 function hoopCount(n){
     // if else
