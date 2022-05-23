@@ -8,14 +8,14 @@
 // p: whole number
 // return true or false
 
-function checkAlive (health) {
-    if () {
-      health < 0
-      return false
-    } else () {
-      return true
-    }
-  }
+// function checkAlive (health) {
+//     if () {
+//       health < 0
+//       return false
+//     } else () {
+//       return true
+//     }
+//   }
 
 // Tests 
 
