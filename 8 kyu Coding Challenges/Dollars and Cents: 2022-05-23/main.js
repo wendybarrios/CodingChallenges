@@ -8,6 +8,7 @@
 // formatMoney(39.99) --> '$39.99'
 // formatMoney(3.1)   --> $3.00
 
+// Solution
 function formatMoney(amount){
     return '$'+ amount.toFixed(2)
 }
