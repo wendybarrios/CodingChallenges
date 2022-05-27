@@ -11,6 +11,17 @@
 // well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']) --> 'I smell a series!'
 
 function well(x){
+let newArr = []
 
-    
+newArr = x.filter(el => el === 'good')
+// if else 
+if(newArr.length > 2){
+    return "I smell a series!"
+} else if (newArr.length > 0){
+    return 'Publish!'
+} else {
+    return  'Fail!'
+}
+
+
 }
