@@ -8,13 +8,12 @@
 
 // Remember, the roots can be written like (x-x1) * (x-x2) = 0
 
-// p: number, whole
-// r: return array
+
 
 // Tests
-quadratic(0,1) -->  [1, -1, 0]
-quadratic(1,1) --> [1, -2, 1]
-quadratic(-4,-9) --> [1, 13, 36]
+// quadratic(0,1) -->  [1, -1, 0]
+// quadratic(1,1) --> [1, -2, 1]
+// quadratic(-4,-9) --> [1, 13, 36]
 
 
 function quadratic (x1, x2){
