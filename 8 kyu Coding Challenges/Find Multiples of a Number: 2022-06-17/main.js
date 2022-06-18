@@ -2,10 +2,6 @@
 
 // For example, if the parameters passed are (2, 6), the function should return [2, 4, 6] as 2, 4, and 6 are the multiples of 2 up to 6.
 
-
-// p: numbers, positive
-// r: array
-
 // Tests
 // findMultiples(5, 25) --> [5, 10, 15, 20, 25]
 // findMultiples(1, 2) --> [1, 2]
@@ -13,8 +9,8 @@
 
 function findMultiples (integer, limit){
     let arr = []
-    for(let i = int; i<= limit; i+=int){
-        result.push(i)
+    for(let i = integer; i<= limit; i+=integer){
+        arr.push(i)
     }
     return arr
 }
