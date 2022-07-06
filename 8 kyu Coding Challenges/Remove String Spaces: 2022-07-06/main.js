@@ -1,9 +1,5 @@
 // Simple, remove the spaces from the string, then return the resultant string.
 
-//p: string
-// r: string 
-
-
 
 
 // Tests
@@ -13,6 +9,5 @@
 
 
 function noSpace (x){
-
-
+return x.replace(/\s/g, '')
 }
