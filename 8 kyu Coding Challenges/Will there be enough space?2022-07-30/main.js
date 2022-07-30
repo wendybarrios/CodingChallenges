@@ -8,8 +8,7 @@
 // wait is the number of people waiting to get on to the bus excluding the driver.
 // If there is enough space, return 0, and if there isn't, return the number of passengers he can't take.
 
-// p: numbers, whole, positive
-// r: number
+
 // Tests
 enough(10, 5, 5) -->0
 enough(100, 60, 50) --> 10
