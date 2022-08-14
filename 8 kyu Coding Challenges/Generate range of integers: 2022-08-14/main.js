@@ -6,10 +6,15 @@
 
 // Tests
 generateRange(2, 10, 2) --> [2,4,6,8,10]
-generateRange(1, 10, 3) // should return array of [1,4,7,10]
+generateRange(1, 10, 3) --> [1,4,7,10]
 
 
 function generateRange(min, max, step){
-
-
+    // create new array
+    let newArr = []
+    // loop
+for(let i = min; i <= max; i+= step) {
+        newArr.push(i)
+}
+return newArr
 }
