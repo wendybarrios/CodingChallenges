@@ -7,3 +7,9 @@
 // solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 
 
+function solution(pairs){
+
+    let newArr = Object.keys(pairs).map(el => `${el} = ${pairs[el]}`).join(',')
+     return newArr
+     
+   }
