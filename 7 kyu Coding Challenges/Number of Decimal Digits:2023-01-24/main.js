@@ -3,3 +3,13 @@
 // All inputs will be valid.
 
 
+function digits(n){
+    // num -> toString -> split -> find length
+    let newArr = n.toString().split('')
+    return newArr.length
+    
+  }
+  
+  console.log(digits(5) , 1) 
+  console.log(digits(12345), 5)
+  console.log(digits(9876543210), 10)
