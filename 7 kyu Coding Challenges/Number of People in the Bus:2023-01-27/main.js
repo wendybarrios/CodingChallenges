@@ -11,3 +11,22 @@
 // Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the returned integer can't be negative.
 
 // The second value in the first pair in the array is 0, since the bus is empty in the first bus stop.
+
+
+var number = function(busStops){
+    // set count
+  //   loop thru array
+    
+    let count = 0
+    for(let i=0;i < busStops.length; i++){
+      count = count + busStops[i][0]
+      count = count - busStops[i][1]
+    }
+    
+    return count
+  }
+
+//   Test Cases
+console.log(number([[10,0],[3,5],[5,8]]),5);
+console.log(number([[3,0],[9,1],[4,10],[12,2],[6,1],[7,10]]),17);
+console.log(number([[3,0],[9,1],[4,8],[12,2],[6,1],[7,8]]),21);
