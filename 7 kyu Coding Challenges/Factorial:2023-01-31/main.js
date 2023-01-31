@@ -6,7 +6,6 @@
 
 function factorial(n){
   // Calculate the factorial here
-  console.log(n)
   if(n < 0 || n > 12){
    throw new Error('out of range');
   } else if(n<2){
