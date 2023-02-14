@@ -18,3 +18,9 @@ function reverseNumber(n){
     }
     
   }
+
+
+
+console.log(reverseNumber(123), 321)
+console.log(reverseNumber(-456), -654)
+console.log(reverseNumber(1000), 1)
