@@ -23,3 +23,7 @@ function sortMyString(S){
    
   
   }
+
+
+console.log(sortMyString("CodeWars"), "CdWr oeas")
+console.log(sortMyString("YCOLUE'VREER"), "YOU'RE CLEVER")
