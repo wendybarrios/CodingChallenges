@@ -27,3 +27,16 @@
 //   { firstName: 'Jayden', lastName: 'P.', country: 'Jamaica', continent: 'Americas', age: 42, language: 'JavaScript' }
 // ];
 // your function should return true.
+
+
+function isRubyComing(list){
+    // some -> check if el.language = "Ruby"
+       return list.some(el => el.language === "Ruby")
+   }
+   
+   console.log(isRubyComing ([
+     { firstName: 'Emma', lastName: 'Z.', country: 'Netherlands', continent: 'Europe', age: 29, language: 'Ruby' },
+     { firstName: 'Piotr', lastName: 'B.', country: 'Poland', continent: 'Europe', age: 128, language: 'Javascript' },
+     { firstName: 'Jayden', lastName: 'P.', country: 'Jamaica', continent: 'Americas', age: 42, language: 'JavaScript' }
+   ]) , true)
+   
