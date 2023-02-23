@@ -17,6 +17,16 @@
 
 // The input array will always be valid and formatted as in the example above.
 
-
+function getFirstPython(list) {
+    // Thank you for checking out my kata :)
+    let newNum = list.find(el => el.language === "Python")
+  
+    if(newNum){
+      return  `${newNum.firstName}, ${newNum.country}`
+    } else {
+      return `There will be no Python developers`
+    }
+    
+  }
 
 
