@@ -15,3 +15,15 @@
 // { C: 2, JavaScript: 1, Ruby: 1 }
 
 
+function countLanguages(list) {
+    let newObj = {}
+    
+    for(let i=0; i < list.length; i++){
+      if(newObj[list[i].language]){
+        newObj[list[i].language]++
+      } else {
+        newObj[list[i].language] = 1
+      }
+    }
+    return newObj
+  }
