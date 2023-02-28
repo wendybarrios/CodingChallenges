@@ -30,7 +30,7 @@ function allContinents(list){
       for(let i=0; i < list.length; i++){
         newArr.push(list[i].continent)
       }
-      console.log(newArr)
+
     
       if(newArr.length >= 5 && newArr.includes("Africa") && newArr.includes("Americas") && newArr.includes("Asia") && newArr.includes("Europe") && newArr.includes("Oceania")){
         return true
