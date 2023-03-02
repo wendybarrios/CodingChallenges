@@ -28,7 +28,6 @@
 
 
 function isAgeDiverse(list) {
-    // thank you for checking out the Coding Meetup kata :)
     // create newArr
     // loop thru list: push ageGroup to newArr
     // check if newArr includes all ageGroups
