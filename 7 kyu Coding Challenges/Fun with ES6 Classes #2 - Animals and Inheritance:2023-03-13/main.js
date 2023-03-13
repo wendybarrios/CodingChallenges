@@ -33,3 +33,49 @@
 // The Dog constructor should accept 4 arguments in the specified order: name, age, status, master.  master is the name of the dog's master which will be a string. Furthermore, dogs should have 4 legs and a species of "dog".
 
 // Dogs have an identical introduce/Introduce method as any other animal, but they have their own method called greetMaster/GreetMaster which accepts no arguments and returns "Hello (insert_master_name_here)" (of course not the literal string but replace the (insert_master_name_here) with the name of the dog's master).
+
+
+// Get Coding :)
+
+class Shark extends Animal {
+    constructor(name, age, status) {
+      super();
+      this.name = name
+      this.age = age
+      this.legs = 0
+      this.species = "shark"
+      this.status = status
+    }
+  }
+  
+  class Cat extends Animal {
+   constructor(name, age, status){
+     super()
+     this.name = name
+     this.age = age
+     this.legs = 4
+     this.species = "cat"
+     this.status = status
+   }
+    introduce(){
+      return `Hello, my name is ${this.name} and I am ${this.age} years old.  Meow meow!`
+    }
+  }
+  
+  class Dog extends Animal {
+    constructor(name, age,status, master=''){
+      super()
+      this.name = name
+      this.age = age
+      this.status = status
+      this.legs = 4
+      this.species = "dog"
+      this.master = master
+    }
+    introduce(){
+      return `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    }
+    greetMaster(){
+      return `Hello ${this.master}`
+    }
+  }
