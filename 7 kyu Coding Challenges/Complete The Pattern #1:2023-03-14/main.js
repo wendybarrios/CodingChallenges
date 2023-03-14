@@ -38,3 +38,19 @@
 // Hint: Use \n in string to jump to next line
 
 
+function pattern(n){
+    let newArr = []
+    //   if n < 1, return ""
+    // loop from 1 to n: repeat (i) times + \n
+      if(n < 1){
+        return ""
+      } else if (n===1){
+        return "1"
+      } else{
+        for(let i=1;i <=n;i++){
+         newArr.push(`${i}`.repeat(i) + "\n")
+        }
+        return newArr.join('').replace(/\n$/, "")
+      }
+     
+    }
