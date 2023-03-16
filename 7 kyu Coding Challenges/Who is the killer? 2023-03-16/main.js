@@ -23,3 +23,6 @@ function killer(suspectInfo, dead) {
   //   loop thr object
     return Object.keys(suspectInfo).find((x) => dead.every((y) => suspectInfo[x].includes(y)))
   }
+
+// Test Cases
+  console.log(killer({'James': ['Jacob', 'Bill', 'Lucas'], 'Johnny': ['David', 'Kyle', 'Lucas'], 'Peter': ['Lucy', 'Kyle']}, ['Lucas', 'Bill']), 'James')
