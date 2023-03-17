@@ -8,3 +8,15 @@
 // [5.0, 10.0, 15.0]
 
 
+function multiples(m, n){
+    // code here
+  
+    let newArr = []
+    let count = 1
+    for(let i=0; i < m; i++ ){
+      newArr.push(n*count)
+      count++
+    }
+    
+  return newArr
+  }
