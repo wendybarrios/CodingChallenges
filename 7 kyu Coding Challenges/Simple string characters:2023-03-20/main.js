@@ -2,3 +2,15 @@
 
 // Solve("*'&ABCDabcde12345") = [4,5,5,3]. 
 // --the order is: uppercase letters, lowercase, numbers and special characters.
+
+
+
+function solve(s){
+   //   replace upp w "" -> filter el !== "" -> count length
+   let newUpper = s.replace(/[A-Z]/g," ").split('').filter(el => el == " ").length
+   let lower = s.replace(/[a-z]/g," ").split('').filter(el => el == " ").length
+   let num = s.replace(/\d/g," ").split('').filter(el => el == " ").length
+   let special = s.replace(/[^A-Za-z0-9]/g," ").split("").filter(el => el == " ").length
+   console.log(newUpper)
+   return [newUpper,lower,num,special]
+   }
