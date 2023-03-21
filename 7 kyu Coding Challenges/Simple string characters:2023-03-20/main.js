@@ -14,3 +14,7 @@ function solve(s){
    console.log(newUpper)
    return [newUpper,lower,num,special]
    }
+
+//    Test Cases
+console.log(solve("aAbBcC"),[3,3,0,0])
+console.log(solve("Codewars@codewars123.com"),[1,18,3,2])
