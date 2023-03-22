@@ -4,3 +4,19 @@
 
 // Strings a and b may be empty, but not null (In C# strings may also be null. Treat them as if they are empty.).
 // If a and b have the same length treat a as the longer producing b+reverse(a)+b
+
+
+function shorter_reverse_longer(a,b){
+    //   if a & b same length
+    // if a.length < b.length
+    //   if a.length > b.length
+       let revA = a.split('').reverse().join('')
+       let revB = b.split('').reverse().join('')
+      if(a.length === b.length){
+        return `${b}${revA}${b}`
+      } else if (a.length < b.length){
+        return `${a}${revB}${a}`
+      } else if(a.length > b.length){
+        return `${b}${revA}${b}`
+      }
+    }
