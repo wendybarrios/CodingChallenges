@@ -20,3 +20,8 @@ function shorter_reverse_longer(a,b){
         return `${b}${revA}${b}`
       }
     }
+
+// Test Cases
+console.log(shorter_reverse_longer("first", "abcde"), "abcdetsrifabcde");
+console.log(shorter_reverse_longer("hello", "bau"), "bauollehbau");
+console.log(shorter_reverse_longer("fghi", "abcde"), "fghiedcbafghi")
