@@ -10,3 +10,14 @@
 // [9, 2, 4, 5, 7, 0, 8, 6, 1] --> 3
 
 
+function getMissingElement(superImportantArray){
+    //TODO
+  //   sort -> loop -> if i !=- [i+1] + 1 return i+1
+     let newArr = superImportantArray.sort((a,b) => a-b)
+     console.log(newArr)
+     for(let i=0; i < newArr.length;i++){
+       if(newArr[i] !== i){
+         return newArr[i] - 1
+       }
+     }
+  }
