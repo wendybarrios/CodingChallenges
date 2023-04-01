@@ -5,3 +5,18 @@
 // spinWords( "Hey fellow warriors" ) => returns "Hey wollef sroirraw" 
 // spinWords( "This is a test") => returns "This is a test" 
 // spinWords( "This is another test" )=> returns "This is rehtona test"
+
+
+function spinWords(string){
+    //TODO Have fun :)
+    let newString = string.split(' ').map(el =>{
+      
+      if(el.length >= 5){
+       return el.split('').reverse().join('')
+      } else {
+        return el
+      }
+      
+    }).join(' ')
+    return newString
+  }
