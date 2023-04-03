@@ -13,3 +13,24 @@
 // "ABBA" -> 2  # 'A' and 'B' each occur twice
 
 
+function duplicateCount(text){
+    //...
+   let newArr = []
+   
+  let newText = text.toLowerCase().split('')
+  
+    for(let i=0;i < newText.length; i++){
+      for(let j=0; j < newText.length; j++){
+  
+        if (i !== j && newText[i] === newText[j]) {
+             // check if elements' values are equal
+          newArr.push(newText[i])
+    }
+      
+      }
+    }
+    
+    let final = [...new Set(newArr)]
+    return final.length
+    
+  }
