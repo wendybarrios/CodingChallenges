@@ -9,3 +9,18 @@
 
 
 
+
+function duplicateEncode(word){
+    // ...
+  let emptyArr = []
+  let newWord = word.toLowerCase().split('')
+  for(let i=0; i< newWord.length;i++){
+    if(newWord.indexOf(newWord[i]) === newWord.lastIndexOf(newWord[i])){
+      emptyArr.push("(")
+    } else {
+      emptyArr.push(")")
+    }
+  }
+  
+  return emptyArr.join("")
+}
