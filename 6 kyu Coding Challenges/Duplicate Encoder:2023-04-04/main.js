@@ -24,3 +24,7 @@ function duplicateEncode(word){
   
   return emptyArr.join("")
 }
+
+// Test Cases
+console.log(duplicateEncode("din"),"(((")
+console.log(duplicateEncode("recede"),"()()()")
