@@ -29,3 +29,8 @@ function findOutlier(integers){
       return evenArr[0]
     }
   }
+
+//   Test Cases
+console.log(findOutlier([0, 1, 2]), 1)
+console.log(findOutlier([1, 2, 3]), 2)
+console.log(findOutlier([2,6,8,10,3]), 3)
