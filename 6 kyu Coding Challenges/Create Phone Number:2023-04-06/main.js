@@ -7,3 +7,17 @@
 
 // Don't forget the space after the closing parentheses!
 
+function createPhoneNumber(numbers){
+    let newArr = numbers.map(el => el.toString())
+    let first = newArr[0] + newArr[1] + newArr[2]
+    let second = newArr[3] + newArr[4] + newArr[5]
+    let third = newArr[6] + newArr[7] + newArr[8] + newArr[9]
+    
+    return `(${first}) ${second}-${third}`
+    
+  }
+
+//   Test Cases
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
+console.log(createPhoneNumber([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), "(111) 111-1111");
+console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890");
