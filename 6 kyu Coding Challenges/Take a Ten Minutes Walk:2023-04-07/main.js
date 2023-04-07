@@ -4,3 +4,30 @@
 
 // Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
+function isValidWalk(walk) {
+    //insert brilliant code here
+    //create ns and ew tracks
+    let ns = 0
+    let ew = 0
+    
+    for(let i=0; i < walk.length;i++){
+      if(walk[i] ==="n"){
+        ns = ns + 1
+      } else if (walk[i] === "s"){
+        ns = ns - 1
+      } else if (walk[i] === "e"){
+        ew = ew + 1
+      }else if (walk[i] === "w"){
+        ew = ew - 1
+      }
+    }
+    
+    if(ew === 0 && ns === 0 && walk.length === 10){
+      return true
+    } else{
+      return false
+    }
+  }
+
+
+  
