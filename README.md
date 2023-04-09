@@ -3,6 +3,7 @@
 
 
 ## How It's Made:
+A repository filled with codewars challenges (kata). I have completed over 420+ challenges and push 5 solutions every week.
 
 
 ## Optimizations
