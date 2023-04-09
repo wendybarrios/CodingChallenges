@@ -6,8 +6,8 @@
 
 
 ## Optimizations
-
+I consistently re-examine and refactor my code to improve readability/code efficiency.
 
 
 ## Lessons Learned:
-I learned that there are an endless amount of ways to solve a challenge. Nonetheless, there is always room for improvement and improving efficiency and speed.
+I learned that there are an endless amount of ways to solve a challenge and find a solution. Nonetheless, there is always room for improvement and learn from the solutions of fellow developers.
