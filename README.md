@@ -2,8 +2,7 @@
 
 
 
-
-
+## How It's Made:
 
 
 ## Optimizations
@@ -11,4 +10,4 @@
 
 
 ## Lessons Learned:
-
+I learned that there are an endless amount of ways to solve a challenge. Nonetheless, there is always room for improvement and improving efficiency and speed.
