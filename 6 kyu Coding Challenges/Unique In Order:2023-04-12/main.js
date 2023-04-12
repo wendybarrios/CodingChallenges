@@ -7,5 +7,28 @@
 // uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 
 
-
+var uniqueInOrder=function(iterable){
+    // check if iterable is str
+  //   else : iterate  
+  let emptyArr = []
+  
+    if (typeof iterable === "string"){
+      let newString = iterable.split('')
+      for(let i=0; i < newString.length;i++){
+      if(newString[i] !== newString[i+1]){
+        emptyArr.push(newString[i])
+      }
+    }
+      return emptyArr
+    } else {
+      for(let i=0; i < iterable.length;i++){
+        if(iterable[i] !== iterable[i+1]){
+          emptyArr.push(iterable[i])
+        }
+      }
+      return emptyArr
+    }
+    
+  
+  }
 
