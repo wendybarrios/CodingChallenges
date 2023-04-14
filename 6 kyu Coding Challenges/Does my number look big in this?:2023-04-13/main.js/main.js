@@ -14,3 +14,25 @@
 
 // Error checking for text strings or other invalid inputs is not required, only valid positive non-zero integers will be passed into the function.
 
+
+function narcissistic(value) {
+    // Code me to return true or false 
+    //create emptyArr
+    //val -> toString() -> split -> map(): change to Num 
+    // loop thru newArr: el ^ val.length -> push emptyArr
+    // add up all nums in emptyArr
+   
+    let emptyArr = []
+    let newString = value.toString().split('').map(el => +el)
+ 
+    for(let i=0; i < newString.length;i++){
+      emptyArr.push(Math.pow(newString[i], newString.length))
+    }
+
+  let otherNum = emptyArr.reduce((a,c)=> a+c, 0)
+  if(otherNum.toString() === newString.join('')){
+    return true
+  } else {
+    return false
+  }
+  }
