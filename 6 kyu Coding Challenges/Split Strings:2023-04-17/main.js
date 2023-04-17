@@ -4,3 +4,19 @@
 
 // * 'abc' =>  ['ab', 'c_']
 // * 'abcdef' => ['ab', 'cd', 'ef']
+
+
+function solution(str){
+  
+    let newString = str.split('')
+    let emptyArr = []
+    for(let i=0; i < newString.length;i+=2){
+      if(newString[i+1]){
+        emptyArr.push(newString[i]+newString[i+1])
+      } else{
+        emptyArr.push(newString[i] + '_')
+      }
+    }
+    
+    return emptyArr
+  }
