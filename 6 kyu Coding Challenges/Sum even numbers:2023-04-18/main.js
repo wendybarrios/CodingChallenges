@@ -11,3 +11,15 @@
 
 
 
+function sumEvenNumbers(input) {
+    // [...]
+    let emptyArr = []
+  
+    for(let i=0; i< input.length;i++){
+      if(input[i] % 2 === 0){
+        emptyArr.push(input[i])
+      } 
+    }
+    
+    return emptyArr.reduce((a,b) => a+b,0)
+  }
