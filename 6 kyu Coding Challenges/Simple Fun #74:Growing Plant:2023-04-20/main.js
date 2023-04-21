@@ -51,3 +51,21 @@
 // [output] an integer
 
 // The number of days that it will take for the plant to reach/pass desiredHeight (including the last day in the total count).
+
+
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+    let initial = 0
+    let count = 0
+    
+    for(let i=0; initial <= desiredHeight; i++){ 
+        count++
+      initial = initial + upSpeed
+      if(initial >= desiredHeight){
+        return count
+      }
+      initial = initial - downSpeed
+    }
+    
+    return count
+    
+  }
