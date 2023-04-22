@@ -22,3 +22,18 @@
 // The input can be modified
 
 
+function nicknameGenerator(name){
+    //code goes here
+  //   length < 4
+  //   first three letters
+  //   first 4 letters
+    let letter = name.charAt(2)
+    if (name.length < 4){
+      return  `Error: Name too short`
+    } else if(letter == "a" || letter == "e" || letter == "i"|| letter == "o"|| letter == "u"){
+      return name.slice(0,4)
+    } else {
+      return name.slice(0,3)
+    }
+    
+  }
