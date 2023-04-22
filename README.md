@@ -1,5 +1,6 @@
 <h1 align="center">Coding Challenges:<a target="_blank" href="https://www.codewars.com/users/wbarrios001/stats" >Visit Here</a><h1>
 
+<img width="1124" alt="Screen Shot 2023-04-19 at 6 15 55 PM" src="https://user-images.githubusercontent.com/102558203/233804210-1ab5310f-fcff-48c3-b0ed-96c485afa156.png">
 
 
 ## How It's Made:
