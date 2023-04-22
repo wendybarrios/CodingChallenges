@@ -23,7 +23,6 @@
 
 
 function nicknameGenerator(name){
-    //code goes here
   //   length < 4
   //   first three letters
   //   first 4 letters
