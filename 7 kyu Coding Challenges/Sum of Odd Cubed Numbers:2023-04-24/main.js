@@ -18,3 +18,8 @@ function cubeOdd(arr) {
   }
     return emptyArr.reduce((a,b) => a + b)
   }
+
+//   Test Cases
+console.log(cubeOdd([1, 2, 3, 4]), 28);
+console.log(cubeOdd([-3,-2,2,3]), 0);
+console.logcubeOdd((["a",12,9,"z",42]), undefined)
