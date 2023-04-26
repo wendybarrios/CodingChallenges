@@ -17,3 +17,8 @@ function factorial (n) {
     else
       return n * factorial(n-1); 
   }
+
+// Test Cases
+console.log(factorial(2), 2);
+console.log(factorial(5));
+console.log(factorial(-1), null)
