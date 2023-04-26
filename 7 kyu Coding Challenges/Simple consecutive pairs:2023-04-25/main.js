@@ -9,3 +9,32 @@
 // --the last digit has no pair, so we ignore.
 
 
+function pairs(ar){
+    //..
+   //   check length of ar: if even || if odd
+   //   if even: get abs val of each num -> loop through all the nums -> 
+     //check if Math.abs(arr[i] - arr[i+1]) == 1
+     
+     //if odd: do same as even but when looping skip last num
+     
+     let newArr = ar.map(el => Math.abs(el))
+     
+     let count = 0
+     
+     if (ar.length % 2 === 0){
+       for(let i=0; i < newArr.length-1;i+=2){
+         if(Math.abs(ar[i] - ar[i+1]) == 1){
+            count++
+         }
+       }
+     } else {
+       for(let i=0; i < newArr.length-2;i+=2){
+         if(Math.abs(ar[i] - ar[i+1]) == 1){
+           count++
+         }
+       }
+     }
+     
+     return count
+     
+   };
