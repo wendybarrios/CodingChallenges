@@ -14,3 +14,26 @@
 // [output] a boolean value
 
 // true if Arthur need to invite more women, false otherwise.
+
+function inviteMoreWomen(L) {
+  //   create count for both -1 and 1
+  //   loop through arr 
+    
+  let men = 0
+  let women = 0
+  
+  for(let i=0; i < L.length;i++){
+    if(L[i] === -1){
+      women++
+    } else if (L[i] === 1){
+      men++
+    }
+  }
+  //   compare men and women
+    if(men > women){
+      return true
+    } else{
+      return false
+    }
+    
+  }
