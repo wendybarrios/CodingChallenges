@@ -11,3 +11,10 @@
 
 // You have to create the function factorial that receives n and returns n!. You have to use recursion.
 
+const factorial = n => {
+    if(n < 2){
+      return 1
+    } else {
+      return n * factorial(n-1)
+    }
+  };
