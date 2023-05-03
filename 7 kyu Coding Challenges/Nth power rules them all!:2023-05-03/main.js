@@ -16,3 +16,7 @@ function modifiedSum(a, n) {
     let sum = a.reduce((a,c) => a+c,0)
     return mathPow - sum
   }
+
+// Test Cases
+  console.log(modifiedSum([1, 2, 3], 3), 30); 
+  console.log(modifiedSum([1, 2], 5), 30)
