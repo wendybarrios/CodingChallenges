@@ -7,3 +7,12 @@
 // {1, 2, 3}, 3  -->  (1^3 + 2^3 + 3^3 ) - (1 + 2 + 3)  -->  36 - 6  -->  30
 // {1, 2}, 5     -->  (1^5 + 2^5) - (1 + 2)             -->  33 - 3  -->  30
 
+function modifiedSum(a, n) {
+    // map through a -> do Exponent -> push to emptyArr
+   //  adds up all nums
+  //   exp - sumOfNums
+    
+    let mathPow = a.map(el => Math.pow(el,n)).reduce((a,b) => a+b,0)
+    let sum = a.reduce((a,c) => a+c,0)
+    return mathPow - sum
+  }
