@@ -9,3 +9,19 @@
 
 // Note: N may be 1 or less (in the latter case, the first array will be []).
 
+function findDeletedNumber(arr, mixArr) {
+    // sort both 
+    if(arr.length === mixArr.length){
+      return 0
+    }
+    let sortedArr = arr.sort((a,b) => a-b)
+    let sortedMix = mixArr.sort((a,b) => a-b)
+    
+  //   loop: check if arr[i] === mixArr[i]
+    for(let i=0; i<sortedArr.length;i++){
+      if(sortedArr[i] !== sortedMix[i]){
+        return sortedArr[i]
+      }
+    }
+    
+  }
