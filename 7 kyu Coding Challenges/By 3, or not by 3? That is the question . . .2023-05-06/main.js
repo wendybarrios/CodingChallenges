@@ -9,3 +9,18 @@
 // "100853"   -> false
 // "33333333" -> true
 // "7"        -> false
+
+function divisibleByThree(str){
+    // split -> map: +el -> reduce 
+    // if total/3  == 0 tru
+    //else -> false
+      
+    let total = str.split('').map(el => +el).reduce((a,b) => a+b,0)
+    
+      if(total%3 === 0){
+        return true
+      } else {
+        return false
+      }
+    
+    }
