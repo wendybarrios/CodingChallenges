@@ -4,3 +4,12 @@
 
 
 
+function covfefe(str){
+    //covfefe !
+    
+    if(str.includes("coverage")){
+      return str.replace(/coverage/gi, "covfefe")
+    } else{
+      return `${str} covfefe`
+    }
+  }
