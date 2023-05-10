@@ -6,3 +6,6 @@
 
 // You should return the duplicate value as a single integer.
 
+function findDup( arr ){
+    return arr.find(el => arr.indexOf(el) !== arr.lastIndexOf(el));
+  }
