@@ -12,3 +12,11 @@
 
 
 
+function maxProduct(numbers, size){
+    //sort -> slice(-size)
+  //   split -> multiply numbers
+    let newString = numbers.sort((a,b) => a-b).slice(-size)
+    let final = newString.reduce((a,b) => a * b, 1)
+    return final
+    
+  }
