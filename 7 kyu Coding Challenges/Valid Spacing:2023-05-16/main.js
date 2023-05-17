@@ -14,3 +14,29 @@
 // * ' '             => false
 // * ''              => true
 // Note - there will be no punctuation or digits in the input string, only letters.
+
+// check if a string has valid spacing
+// string -> can be empty, no special chars, no nums,
+// boo -> true/false
+
+
+
+function validSpacing(s) {
+    
+    if(!str) {
+        return true
+      }
+      
+      if(str[0].includes(' ') || str[str.length -1].includes(' ') || str.includes('  ')) {
+       return false
+     } else {
+       return true
+     }
+  }
+
+
+
+// Examples
+console.log(s('Hello'), true)
+console.log(s('Helloworld'), true)
+console.log(s('Hello  world '), false)
