@@ -21,7 +21,7 @@
 
 
 
-function validSpacing(s) {
+function validSpacing(str) {
     
     if(!str) {
         return true
