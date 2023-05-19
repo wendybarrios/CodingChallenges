@@ -8,3 +8,29 @@
 // calculate(4,"/",0) //should return null
 // Keep in mind, you cannot divide by zero. If an attempt to divide by zero is made, return null (throw an ArgumentException in C#)/(None in Python).
 
+
+function calculate(num1, operation, num2) {
+    //  if operation === "+" -> num1+num2
+    // operation === "-"
+      // operation === "*"
+    // operation === "/"
+    //   else -> return null
+      
+      if(operation === "+"){
+        return num1+num2
+      } else if(operation === "-"){
+         return num1-num2
+      } else if (operation === "*"){
+         return num1*num2
+      } else if (operation === "/"){
+          if (num2 === 0){
+            return null
+          } else {
+            return num1/num2
+          }
+      } else {
+        return null
+      }
+    
+
+    }
