@@ -27,3 +27,8 @@ function specialNumber(n){
     }
   
   }
+
+//   Test Cases
+console.log(specialNumber(2),"Special!!");
+console.log(specialNumber(3),"Special!!");
+console.log(specialNumber(6),"NOT!!")
