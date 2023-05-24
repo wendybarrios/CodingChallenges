@@ -6,3 +6,25 @@
 // "a"             --> "invalid string"
 
 
+function evenChars(string) {
+    //emptyArr 
+    //  if  str that are < 2 || > 100
+    // loop thru str -> if i % 2 === 0, push
+    //  join
+      let empty = []
+      let newString = string.split('')
+      
+      if(string.length < 2 || string.length > 100){
+        return "invalid string"
+      } else {
+    //     loop thr string
+        for(let i=0;i<newString.length-1;i++){
+          if (i % 2 === 0){
+            empty.push(newString[i+1])
+          }
+        }
+        
+      }
+    
+      return empty
+    }
