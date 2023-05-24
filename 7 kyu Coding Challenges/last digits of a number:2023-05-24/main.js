@@ -17,3 +17,19 @@
 // N = 637547
 // D = 6
 // result = [6, 3, 7, 5, 4, 7]
+
+
+function lastDigit(n, d) {
+    //if d <=0, return []
+    // if d > num of digits -> return all digits -> push all nums to emptyArr 
+  //    else => d.toString().slice(-d).split(' ')
+    
+  let emptyArr = []
+    if( d <= 0){
+      return emptyArr
+    } else if (d > n.toString().length){
+      return n.toString().split('').map(el => +el)
+    } else {
+      return n.toString().slice(-d).split('').map(el => +el)
+    }
+  }
