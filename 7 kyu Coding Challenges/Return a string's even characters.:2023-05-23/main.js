@@ -28,3 +28,10 @@ function evenChars(string) {
     
       return empty
     }
+
+
+    // Test Cases
+
+console.log(evenChars ("1234"), ["2", "4"])
+console.log(evenChars (";;;--"), [";", "-"])
+console.log(evenChars ("abcdefghijklm"), ["b", "d", "f", "h", "j", "l"])
