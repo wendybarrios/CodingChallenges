@@ -23,3 +23,5 @@ var splitInParts = function(s, partLength){
     }
     return arr.join(' ')
   }
+
+//   Test Cases
