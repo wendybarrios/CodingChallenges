@@ -9,3 +9,7 @@
 // "1plus2plus3plus4"  --> "10"
 // "1plus2plus3minus4" -->  "2"
 
+function calculate(str) {
+    //your code here...
+    return str.replace(/plus/g, ' ').replace(/minus/g, ' -').split(' ').reduce((acc, n) => acc + +n, 0).toString()
+    }
