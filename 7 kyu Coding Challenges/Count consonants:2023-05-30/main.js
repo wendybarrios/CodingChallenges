@@ -10,6 +10,10 @@ function consonantCount(str) {
 // Solution #@
 function consonantCount(str) {
     // replace everything that is not a-z | a vowel with ''
-    
     return str.toLowerCase().replace(/[^a-z]|[aeiou]/g,"").length
   }
+
+
+// Test Cases
+console.log(consonantCount('bcdfghjklmnpqrstvwxyz', 21))
+console.log(consonantCount('bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ', 42))
