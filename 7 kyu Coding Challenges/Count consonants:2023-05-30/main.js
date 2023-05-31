@@ -6,3 +6,10 @@
 function consonantCount(str) {
     return str.split('').filter(v=>/[qzwsxdcrfvtgbyhnjmklp]/gi.test(v)).length
   }
+
+// Solution #@
+function consonantCount(str) {
+    // replace everything that is not a-z | a vowel with ''
+    
+    return str.toLowerCase().replace(/[^a-z]|[aeiou]/g,"").length
+  }
