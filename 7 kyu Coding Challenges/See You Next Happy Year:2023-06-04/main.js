@@ -12,3 +12,10 @@
 // Have no fear , It is guaranteed that the answer exists .
 // It's not necessary that the year passed to the function is Happy one .
 // Input Year with in range (1000  ≤  y  ≤  9000)
+
+
+
+function nextHappyYear(year){
+    while(new Set(String((++year)).split('')).size < 4);
+    return year
+  }
