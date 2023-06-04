@@ -19,3 +19,5 @@ function nextHappyYear(year){
     while(new Set(String((++year)).split('')).size < 4);
     return year
   }
+
+//   Test Cases
