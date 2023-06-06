@@ -21,3 +21,6 @@ function nextHappyYear(year){
   }
 
 //   Test Cases
+console.log(nextHappyYear(1001),1023);
+console.log(nextHappyYear(1123),1203);
+console.log(nextHappyYear(2001),2013)
