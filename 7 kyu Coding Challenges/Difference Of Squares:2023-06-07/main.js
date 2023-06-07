@@ -33,3 +33,9 @@ function differenceOfSquares(n){
     let second = newArr.map(el => el*el).reduce((a,b)=>a+b,0)
     return first - second
   }
+
+
+// Test Cases
+console.log(differenceOfSquares(5), 170)
+console.log(differenceOfSquares(10), 2640)
+console.log(differenceOfSquares(100), 25164150)
