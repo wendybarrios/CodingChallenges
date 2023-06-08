@@ -24,3 +24,9 @@ function noIfsNoButs(a, b) {
           break;
     }
   }
+
+
+//   Test Cases
+console.log(noIfsNoButs(45, 51), "45 is smaller than 51");
+console.log(noIfsNoButs(1, 2), "1 is smaller than 2");
+console.log(noIfsNoButs(-3, 2), "-3 is smaller than 2");
