@@ -5,3 +5,20 @@
 // Good luck!
 
 
+const sumSquareEvenRootOdd = ns => {
+    // emptyArr
+  //   loop thry ns: if even, push el*el; if odd, push Math.sqrt(el)
+  //   take sum of emptyArr 
+    
+    let emptyArr = []
+    for(let i=0; i < ns.length;i++){
+      if(ns[i] % 2 === 0){
+        emptyArr.push(ns[i]*ns[i])
+      } else {
+        emptyArr.push(Math.sqrt(ns[i]))
+      }
+    }
+    
+    let final = emptyArr.reduce((a,b) => a+b,0)
+    return Number(final.toFixed(2))
+  };
