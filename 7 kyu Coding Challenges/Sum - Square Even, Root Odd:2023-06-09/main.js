@@ -22,3 +22,7 @@ const sumSquareEvenRootOdd = ns => {
     let final = emptyArr.reduce((a,b) => a+b,0)
     return Number(final.toFixed(2))
   };
+
+// Test Cases
+console.log(sumSquareEvenRootOdd([4,5,7,8,1,2,3,0]), 91.61)
+console.log(sumSquareEvenRootOdd([1,14,9,8,17,21]), 272.71)
