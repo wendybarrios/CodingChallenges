@@ -6,3 +6,8 @@
 
 // In languages that do not have an empty option, just return null
 
+const last = xs => {
+
+    if(xs.length < 1) {return null} else {return xs[xs.length-1]}
+    
+    }
