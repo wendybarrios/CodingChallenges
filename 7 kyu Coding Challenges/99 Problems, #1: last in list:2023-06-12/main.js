@@ -11,3 +11,7 @@ const last = xs => {
     if(xs.length < 1) {return null} else {return xs[xs.length-1]}
     
     }
+
+// Test Cases
+console.log( last([1,2,3]), 3)
+console.log( last([]), null)
