@@ -30,3 +30,8 @@ function isItANum(str) {
       return "Not a phone number"
     }
 }
+
+// Test Cases
+console.log(isItANum("S:)0207ERGQREG88349F82!efRF)"), "02078834982");
+console.log(isItANum("sjfniebienvr12312312312ehfWh"), "Not a phone number");
+console.log(isItANum("0192387415456"), "Not a phone number");
