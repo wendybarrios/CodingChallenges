@@ -4,3 +4,28 @@
 
 // --> "alpha beta gamma delta alpha beta gamma delta"
 // Words will be separated by a single space. There will be no leading or trailing spaces in the string. An empty string (0 words) is a valid input.
+
+function removeConsecutiveDuplicates(string) {
+    let newArr = []
+    
+    if(string === ""){
+      return ""
+    }
+    
+  //   loop thru string -> if i !== i+! push i
+    let arr = string.split(' ')
+    
+    if(arr.length === 1){
+      return string
+    }
+    console.log(arr)
+    for(let i=0;i < arr.length;i++){
+      if(arr[i] !== arr[i+1]){
+        newArr.push(arr[i])
+      }
+    }
+   
+    
+    
+    return newArr.join(' ')
+  }
