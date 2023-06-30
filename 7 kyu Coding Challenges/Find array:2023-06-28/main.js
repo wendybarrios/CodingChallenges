@@ -13,3 +13,20 @@
 // For arr1=["a","b","c","d"], arr2=[3,0,2] the function returns ["d","a","c"]
 
 // Note that when an element inside arr2 is greater than the index of the last element of arr1 no element of arr1 should be added to the resulting array. If either arr1 or arr2 is empty, you should return an empty arr (empty list in python, empty vector in c++). Note for c++ use std::vector arr1, arr2.
+
+
+function findArray(arr1, arr2){
+    let emptyArr = []
+    // loop thru arr2 -> push indexOf(el) in arr1 to emptyArr
+    
+    
+    if(arr1.length < 1 || arr2.length < 1){
+      return []
+    } else {
+      for(let i=0; i < arr2.length;i++){
+        emptyArr.push(arr1[arr2[i]])
+      }
+    }
+    
+  return emptyArr
+  }
