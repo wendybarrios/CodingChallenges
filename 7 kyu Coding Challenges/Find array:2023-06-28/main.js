@@ -30,3 +30,9 @@ function findArray(arr1, arr2){
     
   return emptyArr
   }
+
+
+// Test Cases
+console.log(findArray(['a', 'a', 'a', 'a', 'a'], [2, 4]), ['a', 'a'])
+console.log(findArray([0, 1, 5, 2, 1, 8, 9, 1, 5], [1, 4, 7]), [1, 1, 1])
+console.log(findArray([1, 2, 3, 4, 5], [0]), [1])
