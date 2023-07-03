@@ -15,3 +15,10 @@ function duplicates(arr) {
     let final = [...new Set(duplicates)]
     return final
   }
+
+
+
+// Test Cases
+console.log(duplicates([1, 2, 3, 4, 3]), [3], "arr = [1, 2, 3, 4, 3]");
+console.log(duplicates([1, 2, 3, 3, 2, 1]), [3, 2, 1], "arr = [1, 2, 3, 3, 2, 1]");
+console.log(duplicates([1, 2, 1, 2, 1, 2, 1]), [1, 2], "arr = [1, 2, 1, 2, 1, 2, 1]")
