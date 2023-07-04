@@ -13,7 +13,6 @@
 
 
 
-
 function toAcronym(inp){
     // split by space
     // loop thru arr, get first char of each word, push to newArr
@@ -30,4 +29,9 @@ function toAcronym(inp){
     return emptyArr.join('').toUpperCase()
     
   }
-
+// Test Cases
+  ["Code Wars", "CW"],
+  ["Water Closet", "WC"],
+  ["Portable Network Graphics", "PNG"],
+  ["PHP: Hypertext Preprocessor", "PHP"],
+  ["hyper text markup language", "HTML"]
