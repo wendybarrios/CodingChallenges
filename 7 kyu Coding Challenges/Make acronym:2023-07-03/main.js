@@ -14,4 +14,20 @@
 
 
 
+function toAcronym(inp){
+    // split by space
+    // loop thru arr, get first char of each word, push to newArr
+  //   join newArr -> 
+    
+    let newArr = inp.split(' ')
+    let emptyArr = []
+    
+    
+    for(let i=0; i < newArr.length;i++){
+      emptyArr.push(newArr[i].charAt(0))
+    }
+    
+    return emptyArr.join('').toUpperCase()
+    
+  }
 
