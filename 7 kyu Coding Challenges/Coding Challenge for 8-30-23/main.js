@@ -29,3 +29,8 @@ function dropCap(n) {
       
     }
 
+    // Examples
+    console.log(dropCap('Apple Banana'),"Apple Banana");
+    console.log(dropCap('Apple'),"Apple");
+    console.log(dropCap(''),"")
+
