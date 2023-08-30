@@ -11,3 +11,21 @@
 // Note: you will be provided atleast one word and should take string as input and return string as output.
 
 
+function dropCap(n) {
+    //   lowercase everything
+      // split by space
+      // loop thu arr -> check length : if l > 2, make first char UpperCase else: lowerC
+    //   join
+      
+      let newWord = n.split(" ").map(el => {
+        if(el.length > 2){
+          return el[0].toUpperCase() + el.slice(1).toLowerCase()
+        } else {
+          return el
+        }
+      })
+      console.log(newWord)
+      return newWord.join(" ")
+      
+    }
+
